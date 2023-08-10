@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Chat client</title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    <main class="main" id="main">
+        <h1>Chat</h1>
+        <div class="chat" id="chat">
+            <div id="output" class="output"></div>
+            <form id="message_form">
+                <input id="message" type="text">
+                <input id="send_message" type="submit" value="Send message">
+            </form>
+            <form id="connect_form">
+                <input id="nickname" type="text" placeholder="Enter nickname">
+                <input id="connect" type="submit" value="Connect">
+                <input id="close" type="button" value="Close connection" disabled="">
+                <span id="status"></span>
+            </form>
+        </div>
+    </main>
+    <script src="https://cdn.ably.com/lib/ably.min-1.js"></script>
+    <script src="chat-client.js"></script>
+</body>
+</html>
